@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../style_practicas.css" />
   <link rel="alternate" type="application/atom+xml" title="My Weblog feed" href="/feed/" />
   <link rel="search" type="application/opensearchdescription+xml" title="My Weblog search" href="opensearch.xml" />
+  <script src="../scripts.js"></script>
   <style>
       * {box-sizing:border-box}
 
@@ -107,36 +108,6 @@
       to {opacity: 1}
     }
   </style>
-  <script>
-      var slideIndex = 1;
-    showSlides(slideIndex);
-
-    // Next/previous controls
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    // Thumbnail image controls
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-    }
-  </script>
 </head>
 <body>
   <header>
@@ -155,6 +126,8 @@
       </ul>
     </nav>
   </header>
+  <!--button scroll top -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <article>
     <header>
       <h1>
