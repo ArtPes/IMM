@@ -45,3 +45,14 @@ slides[slideIndex-1].style.display = "block";
 dots[slideIndex-1].className += " active";
 }
 //-------------------------------------------------------
+//second slideshow_2
+$("#slideshow_2 > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow_2 > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow_2');
+},  3000);
