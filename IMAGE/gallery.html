@@ -9,115 +9,115 @@
   <!--link rel="stylesheet" href="../style_practicas.css" /-->
   <link rel="alternate" type="application/atom+xml" title="My Weblog feed" href="/feed/" />
   <link rel="search" type="application/opensearchdescription+xml" title="My Weblog search" href="opensearch.xml" />
-<style>
-* {
-  box-sizing: border-box;
-}
+  <style>
+  * {
+    box-sizing: border-box;
+  }
 
-body {
-  margin: 0;
-  font-family: Arial;
-}
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
 
-/* The grid: Four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-  padding: 10px;
-}
+  /* The grid: Four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
 
-/* Style the images inside the grid */
-.column img {
-  opacity: 0.8;
-  cursor: pointer;
-}
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
 
-.column img:hover {
-  opacity: 1;
-}
+  .column img:hover {
+    opacity: 1;
+  }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* The expanding image container */
-.container {
-  position: relative;
-  display: none;
-}
-
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
-}
-
-/* Closable button inside the expanded image */
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-}
-footer, .c {
-    text-align: center;
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
     clear: both;
-}
-.sectionSign:before{content:'\00A7'}
-</style>
-</head>
-<body>
+  }
 
-<div style="text-align:center">
-  <h2>Ejercicio 6</h2>
-  <p>-----</p>
-</div>
+  /* The expanding image container */
+  .container {
+    position: relative;
+    display: none;
+  }
 
-<!-- The four columns -->
-<div class="row">
-  <div class="column">
-    <img src="jpg.jpg" alt="JPG" style="width:100%" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="png.png" alt="PNG" style="width:100%" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="bmp.bmp" alt="BMP" style="width:100%" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="tiff.tiff" alt="TIFF" style="width:100%" onclick="myFunction(this);">
-  </div>
-</div>
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
 
-<div class="container">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <img id="expandedImg" style="width:100%;text-align:center">
-  <div id="imgtext"></div>
-</div>
+  /* Closable button inside the expanded image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  footer, .c {
+      text-align: center;
+      clear: both;
+  }
+  .sectionSign:before{content:'\00A7'}
+  </style>
+  </head>
+    <body>
+    <div style="text-align:center">
+      <h2>Ejercicio 6</h2>
+      <p>-----</p>
+    </div>
 
-<script>
-function myFunction(imgs) {
-  var expandImg = document.getElementById("expandedImg");
-  var imgText = document.getElementById("imgtext");
-  expandImg.src = imgs.src;
-  imgText.innerHTML = imgs.alt;
-  expandImg.parentElement.style.display = "block";
-}
-</script>
+    <!-- The four columns -->
+    <div class="row">
+      <div class="column">
+        <img src="jpg.jpg" alt="JPG" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="png.png" alt="PNG" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="bmp.bmp" alt="BMP" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="tiff.tiff" alt="TIFF" style="width:100%" onclick="myFunction(this);">
+      </div>
+    </div>
 
-</body>
-<footer>
-  <p class=sectionSign>
-  <p>&copy; 2018 <a href="#">arpe3</a></p>
-  <a href="image.html"><p>Back</p></a>
-  <a href="../index.html"><p>Home</p></a>
-</footer>
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img id="expandedImg" alt="Img" src=".." style="width:100%;text-align:center">
+      <div id="imgtext"></div>
+    </div>
+
+    <script>
+    function myFunction(imgs) {
+      var expandImg = document.getElementById("expandedImg");
+      var imgText = document.getElementById("imgtext");
+      expandImg.src = imgs.src;
+      imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.style.display = "block";
+    }
+    </script>
+
+
+    <footer>
+      <p class=sectionSign>
+      <p>&copy; 2018 <a href="#">arpe3</a></p>
+      <a href="image.html"><p>Back</p></a>
+      <a href="../index.html"><p>Home</p></a>
+    </footer>
+  </body>
 </html>
