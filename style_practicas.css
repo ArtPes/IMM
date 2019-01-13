@@ -19,6 +19,7 @@ a.simple{border:0 !important;float:left;display:block;margin-right:20px}
 h1 a{color:inherit !important}
 h2,p{margin:1.75em 0;font-weight:normal}
 h1,h2{font-size:medium}
+
 header{
   /*background:linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB, #66ff66);
   background-size: 400% 400%;
@@ -28,7 +29,9 @@ header{
   background: transparent;
   color:white;
   margin:0;
-  padding:1.75em 0
+  padding:1.75em 0;
+  border: 5px solid white;
+  border-radius: 30px;
 }
 
 /*background gradient */
@@ -69,9 +72,11 @@ header{
 }
 nav a:link{color:white}
 nav a:visited{color:white}
-h1{letter-spacing:0.5em;text-align:center;margin:0;font-size: 25px;}
+h1{letter-spacing:0.5em;text-align:center;margin:0;font-size: 30px;}
 h2{text-align:center;font-size:medium;line-height:2.154}
-article header,section header{background:transparent;color:black;margin:0;padding:0}
+article header,section header{background:transparent;color:black;margin:0;padding:0;
+  border: 2px solid transparent;
+  border-radius: 5px;}
 article h1,section h1{letter-spacing:0;text-align:left;margin:1.75em 0}
 #arc th,#arc td{list-style:none;margin:0;padding:0}
 #arc th,.r{text-align:right}
