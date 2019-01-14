@@ -22,7 +22,8 @@
 body {
 	color: #fff;
 	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB, #66ff66);
-	background-size: 900% 900%;
+	background-size: 400% 400%;
+  background-repeat: no-repeat;
 	-webkit-animation: Gradient 30s ease infinite;
 	-moz-animation: Gradient 30s ease infinite;
 	animation: Gradient 30s ease infinite;
