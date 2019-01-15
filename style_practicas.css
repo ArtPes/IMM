@@ -114,7 +114,7 @@ td, th {
 }
 
 tr:nth-child(even) {
-    background-color: #23a6d552;
+    background-color: #f2f2f240;
 }
 
 /*scroll top button*/
